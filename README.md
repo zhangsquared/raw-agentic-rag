@@ -1,7 +1,9 @@
 # Raw Agentic RAG
 
-User LangChain to buid an agentic RAG
-(Ref: [Rag Playground](https://github.com/zhangsquared/rag-playground))
+User LangChain to buid an agentic RAG</br>
+Ref:
+- [Rag Playground](https://github.com/zhangsquared/rag-playground)
+- [User LlamaIndex to build agentic rag](https://github.com/zhangsquared/agentic-rag-playground)
 
 ## Set up env
 
@@ -80,4 +82,3 @@ Requirement: free, fast, no requirement for GPU
 - LLM Model: `gemini-2.5-flash-lite`
 
 [config](./config/__init__.py)
-
