@@ -1,6 +1,7 @@
 # Raw Agentic RAG
 
-User LangChain to buid an agentic RAG</br>
+User LangChain to buid an agentic RAG
+
 Ref:
 - [Rag Playground](https://github.com/zhangsquared/rag-playground)
 - [User LlamaIndex to build agentic rag](https://github.com/zhangsquared/agentic-rag-playground)
