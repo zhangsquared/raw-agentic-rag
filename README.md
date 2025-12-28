@@ -83,3 +83,19 @@ Requirement: free, fast, no requirement for GPU
 - LLM Model: `gemini-2.5-flash-lite`
 
 [config](./config/__init__.py)
+
+
+## Future improvement
+
+1. Gemini free tier has rate limiting
+
+```bash
+Error processing query: Error calling model 'models/gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 18.380998879s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash-lite', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+```
+
+2. Model loading introduces a noticeable start-up delay during the first run
+
+On the first run, `load_docs.py` or `rag_query_engine.py` may be slow because the embedding model and reranking model need to be downloaded.
+In particular, the reranking model can take up to an hour to download on the first run.
+
+3. Improve the doc loading and chunking method
