@@ -15,7 +15,6 @@ uv sync
 Env var: Create a `.env` file
 ```bash
 GOOGLE_API_KEY=...
-GITHUB_TOKEN=...
 ```
 
 ### First time set up env
@@ -37,7 +36,6 @@ uv add fastapi uvicorn
 
 ```bash
 raw-agentic-rag/
-├── __init__.py # basic setting
 ├── ingest/
 │   └── load_docs.py # batch job to chuck, embed documents, and save to storage
 ├── query/
@@ -47,6 +45,8 @@ raw-agentic-rag/
 │                           # apply reranking, and generate a response.
 └── storage/ # persisted index document
 ```
+
+### Local development
 
 Run the batch ingestion job:
 ```bash
@@ -68,7 +68,7 @@ Start the online service:
 uv run uvicorn query.api:app --host 0.0.0.0 --port 8000
 ```
 
-Run lint tool:
+### Run lint tool
 
 ```bash
 ruff check --select I --fix . | uv run ruff format .
