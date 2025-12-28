@@ -99,3 +99,5 @@ On the first run, `load_docs.py` or `rag_query_engine.py` may be slow because th
 In particular, the reranking model can take up to an hour to download on the first run.
 
 3. Improve the doc loading and chunking method
+
+4. How to incress Python FastAPI  parallel processing request
