@@ -100,4 +100,4 @@ In particular, the reranking model can take up to an hour to download on the fir
 
 3. Improve the doc loading and chunking method
 
-4. How to incress Python FastAPI  parallel processing request
+4. How to incress Python FastAPI parallel processing request
