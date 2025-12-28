@@ -80,4 +80,4 @@ Requirement: free, fast, no requirement for GPU
 - LLM Model: `gemini-2.5-flash-lite`
 
 [config](./config/__init__.py)
-# raw-agentic-rag
+
