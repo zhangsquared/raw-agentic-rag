@@ -16,7 +16,7 @@ async def query_knowledge_base(user_query: str):
     print("Received query:", user_query)
     input = build_input(user_query)
     try:
-        response = await agent.invoke(input)
+        response = await agent.ainvoke(input)
         return JSONResponse(
             status_code=200,
             content={
