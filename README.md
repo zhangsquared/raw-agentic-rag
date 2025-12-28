@@ -102,7 +102,8 @@ In particular, the reranking model can take up to an hour to download on the fir
 
 4. How to incress Python FastAPI parallel processing request
 
-`uv run uvicorn query.api:app --host 0.0.0.0 --port 8000` only use one single worker process.
-In Python, because of the Global Interpreter Lock (GIL), a single process can only execute one line of Python code at a time. `uv run uvicorn query.api:app --host 0.0.0.0 --port 8000 --workers 4` will spin up 4 agents, but somehow the queries are still linear.
+By default, `uv run uvicorn query.api:app --host 0.0.0.0 --port 8000` starts a single worker process. Due to Python’s Global Interpreter Lock (GIL), a single process can only execute one thread of Python bytecode at a time.
 
-Possible bottleneck: CPU or GPU resources, single database connection, Google API rate limiting.
+Although running `uv run uvicorn query.api:app --host 0.0.0.0 --port 8000 --workers 4` will start four worker processes, the requests still appear to be handled sequentially rather than in parallel.
+
+Possible bottlenecks include limited CPU or GPU resources, the use of a single shared database connection, or rate limiting imposed by the Google API.
