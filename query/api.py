@@ -17,10 +17,18 @@ async def query_knowledge_base(user_query: str):
     input = build_input(user_query)
     try:
         response = await agent.invoke(input)
-        return {"final_answer": extract_answer(response)}
+        return JSONResponse(
+            status_code=200,
+            content={
+                "user_query": user_query,
+                "final_answer": extract_answer(response),
+            },
+        )
     except Exception as e:
         print(f"Error processing query: {e}")
         return JSONResponse(
             status_code=500,
-            content={"error": "Failed to process the query", "details": str(e)},
+            content={
+                "error": "Failed to process the query", "details": str(e)
+            },
         )
