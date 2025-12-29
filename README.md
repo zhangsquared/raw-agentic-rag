@@ -2,7 +2,7 @@
 
 Use LangChain to buid an agentic RAG
 
-<img width="1664" height="580" alt="image" src="https://github.com/user-attachments/assets/efa64f65-1403-49e2-bebd-6cb3b18cb4d7" />
+<img width="1491" height="537" alt="image" src="https://github.com/user-attachments/assets/f11990fa-16de-48c4-bf41-1eb83176f94a" />
 
 [original graph](https://docs.google.com/presentation/d/1K2VCMqOAlOVnsUab6jgWRqVD6KxNtc0bzXsOfQeWedM/edit?slide=id.p#slide=id.p)
 
