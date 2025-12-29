@@ -45,7 +45,7 @@ raw-agentic-rag/
 │   └── load_docs.py # batch job to chuck, embed documents, and save to storage
 ├── query/
 │   ├── agent.py # AI Agent
-│   ├── api.py # FastAPI, stateless online service
+│   ├── api.py # FastAPI, stateless online service, a wrapper over AI Agent
 │   └── rag_query_engine.py # Given a user query, perform vector retrieval, apply reranking, and generate a response. 
 │                           # It is a (MCP) tool registered in AI Agent. 
 └── storage/ # persisted index document
