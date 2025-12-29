@@ -4,6 +4,8 @@ Use LangChain to buid an agentic RAG
 
 <img width="1664" height="580" alt="image" src="https://github.com/user-attachments/assets/efa64f65-1403-49e2-bebd-6cb3b18cb4d7" />
 
+[original graph](https://docs.google.com/presentation/d/1K2VCMqOAlOVnsUab6jgWRqVD6KxNtc0bzXsOfQeWedM/edit?slide=id.p#slide=id.p)
+
 Ref:
 - [Rag Playground](https://github.com/zhangsquared/rag-playground)
 - [User LlamaIndex to build agentic rag](https://github.com/zhangsquared/agentic-rag-playground)
