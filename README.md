@@ -47,7 +47,7 @@ raw-agentic-rag/
 │   ├── agent.py # AI Agent
 │   ├── api.py # FastAPI, stateless online service
 │   └── rag_query_engine.py # given a user query, perform vector retrieval,
-│                           # apply reranking, and generate a response.
+│                           # apply reranking, and generate a response. It is a (MCP) tool registered in AI Agent. 
 └── storage/ # persisted index document
 ```
 
