@@ -9,6 +9,7 @@ Use LangChain to buid an agentic RAG
 Ref:
 - [Rag Playground](https://github.com/zhangsquared/rag-playground)
 - [User LlamaIndex to build agentic rag](https://github.com/zhangsquared/agentic-rag-playground)
+- [Slack Bot](https://github.com/zhangsquared/zz-slack-bot)
 
 ## Set up env
 
