@@ -1,6 +1,8 @@
 # Raw Agentic RAG
 
-User LangChain to buid an agentic RAG
+Use LangChain to buid an agentic RAG
+
+<img width="1664" height="580" alt="image" src="https://github.com/user-attachments/assets/efa64f65-1403-49e2-bebd-6cb3b18cb4d7" />
 
 Ref:
 - [Rag Playground](https://github.com/zhangsquared/rag-playground)
