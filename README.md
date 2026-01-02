@@ -7,7 +7,7 @@ Use LangChain to buid an agentic RAG
 [original graph](https://docs.google.com/presentation/d/1K2VCMqOAlOVnsUab6jgWRqVD6KxNtc0bzXsOfQeWedM/edit?slide=id.p#slide=id.p)
 
 Related git repo:
-- [Rag Playground](https://github.com/zhangsquared/rag-playground)
+- [Rag Jupiter Notebook](https://github.com/zhangsquared/rag-playground)
 - [User LlamaIndex to build agentic rag](https://github.com/zhangsquared/agentic-rag-playground)
 - [Slack Bot](https://github.com/zhangsquared/zz-slack-bot)
 
